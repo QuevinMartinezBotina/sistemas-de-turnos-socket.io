@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #6951F0;
+    background-image: radial-gradient(circle at 104.08% 12.13%, #4affff 0, #27ffff 12.5%, #00ffff 25%, #00ffff 37.5%, #10ecf8 50%, #27d1e2 62.5%, #34b8ce 75%, #3ca4bb 87.5%, #4192aa 100%);
     color: white;
+    font-family: 'Silkscreen', cursive !important;
 }
 
 table {
@@ -33,4 +36,80 @@ table {
 
 #lblNuevoTicket {
     font-size: 70px;
+}
+
+.btn-circle {
+    background: lightblue !important;
+    border-radius: 50% !important;
+    width: 200px !important;
+    height: 200px !important;
+    transition: all 300ms;
+}
+
+.btn-circle:hover {
+    transform: scale(1.05, 1.05);
+    border: 2px solid #fff;
+}
+
+/* Card 2 */
+
+.card-dos {
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* IMG CIRCLE */
+#content .img {
+    position: relative;
+    width: 50%;
+    transition: all 300ms;
+
+}
+
+#content img {
+    display: block;
+    width: 200px;
+    height: 200px !important;
+    border-radius: 50%;
+    transition: all 300ms;
+    background-color: #00b2c6;
+}
+
+#content .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+#content .img:hover .overlay {
+    opacity: 1;
+}
+
+#content .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 300ms;
+
 }

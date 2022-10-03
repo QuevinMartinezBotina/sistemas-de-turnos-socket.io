@@ -5,24 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Icono -->
+    <link rel="icon" href="https://toppng.com/uploads/preview/two-tickets-icon-ticket-ico-11562902873mix2fznwjo.png">
+
     <title>Nuevo Ticket</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <table>
+    <table class="animation-buttom">
         <tr>
-            <td>
-                <span id="lblNuevoTicket">
+            <td >
+                <span class="animation-buttom" id="lblNuevoTicket">
                     Cargando...
                 </span>
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="animation-top">
                 <button class="btn btn-secondary btn-lg">
                     Generar nuevo ticket
                 </button>
@@ -33,6 +38,8 @@
     <script src="./socket.io/socket.io.js"></script>
     <script src="./js/nuevo-ticket.js"></script>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>

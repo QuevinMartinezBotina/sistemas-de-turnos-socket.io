@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+body {
+    background-image: radial-gradient(circle at 104.08% 12.13%, #4affff 0, #27ffff 12.5%, #00ffff 25%, #00ffff 37.5%, #10ecf8 50%, #27d1e2 62.5%, #34b8ce 75%, #3ca4bb 87.5%, #4192aa 100%);
+}
+
+.row {
+    margin-right: 0px !important;
+}
+
+.title {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    transition: 300ms all;
+}
+
+.title:hover {
+    transform: scale(1.1, 1.1) !important;
+    cursor: pointer;
+}
+
